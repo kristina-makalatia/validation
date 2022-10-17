@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="POST" id="registration-form">
+      <div>
+        <input type="text" name="myusername" id="username" />
+        <span class="error-text" id="error_myusername"></span>
+      </div>
+      <div>
+        <input
+          type="password"
+          name="mypassword"
+          id="passw"
+          placeholder="Password"
+        />
+        <span class="error-text" id="error_mypassword"></span>
+      </div>
+      <div>
+        <input
+          type="password"
+          name="mypassword2"
+          id="passw2"
+          placeholder="Repeat Password"
+        />
+        <span class="error-text" id="error_mypassword2"></span>
+      </div>
+      <div>
+        <input type="radio" name="age" id="age1" />
+        <label for="age1">18 -30</label>
+        <input type="radio" name="age" id="age2" />
+        <label for="age2">30-45</label>
+        <span class="error-text" id="error_age"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="agree" name="agree" />
+        <label for="agree"> I agree terms and conditions</label>
+        <span class="error-text" id="error_agree"></span>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- show hide password -->
+    <div>
+      <input type="password" name="showpassword" id="showHide">
+      <i class="fa-solid fa-eye" id="toggleIcon"></i>
+    </div>
+
+    <div>
+      <input type="email" id="myemail" name="emailField">
+      <span class="emailerror" id="text"> </span>
+    </div>
+
+
+    <section>
+      <div class="slider-wraper">
+        <button class="arrow arrow-left" id="arrowLeft"><</button>
+        <button class="arrow arrow-right" id="arrowRight">></button>
+        <div class="slider-content" id="slider-content"></div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Posts JsonPlaceholder</h3>
+
+      <div class="post-wraper" id="post-wraperBlock">
+        <div class="overlay" id="overlay">
+          <div class="content" id="postcontent"></div>
+          <div class="close" id="close">X</div>
+        </div>
+
+        <div class="add-post" id="add">+</div>
+        <div class="overlay-add" id="postoverlayAdd">
+          <form action="" id="form">
+            <div>
+              <label for="title">Post Title</label>
+              <input type="text" id="title" name="posttitle" />
+            </div>
+
+            <button type="submit">პოსტის დამატება</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
